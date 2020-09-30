@@ -9,6 +9,15 @@ public class AddressBookMain{
 	         ContactPerson contactPerson=new ContactPerson(firstName,lastName,address,city,state,zip,phoneNumber,email);
 	         contactPersonList.add(contactPerson);   
 	}
+        private void editContactPersonName(String firstName,String lastName){
+		  for(ContactPerson contactPerson: contactPersonList) {
+			  if(contactPerson.getFirstName().equals(firstName)&&contactPerson.getLastName().equals(lastName))
+			  {
+				  
+			  }
+			  
+		  }
+	  }
         public static void main(String[] args) {
 	     AddressBookMain addressBookMain =new AddressBookMain();
 	     addressBookMain.addContactPerson("ABHISHEK","BHAGAT", "DHANBAD,JHARKHAND","KATRASGARH","JHARKHAND","828113",7201563452,"abhishekbhagatrw@gmail.com");
